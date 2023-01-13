@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css">
+    <style>
+        body{
+            background-color: lightpink;
+        }
+        .log_container{ 
+            display: flex; justify-content: center;
+            /* align-items: center; */
+            margin-top:30vh ;z-index: 56px; 
+        }
+        .log1{
+            height: 40vh; 
+            width: 40%;
+            float: left; 
+            background-color: rgba(255, 255, 255, 0.448); border-radius: 2rem;
+        }
+        .form_item{
+         padding: 15px; width: 50%; margin:1vh ;
+         border-radius: 10px; border:none;
+         display: flex; 
+         /* justify-content: center; */
+            align-items: center;
+        }
+        #u_name{
+            margin-top: 8vh;
+        }
+        .fl_btn{
+            margin:1vh ;
+            padding: 2vh 3vh;
+            color: white;
+            background-color:green; 
+            border:none ; border-radius: 10px;
+            font-weight:bolder;  
+        }
+        .fc_btn{
+            margin:1vh ;
+            padding: 2vh 3vh;
+            color: white;
+            background-color:green; 
+            border:none ; border-radius: 10px;
+            font-weight:bolder;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img class= "l_img"src="login_img.jpg" class="img-fluid" alt="...">  -->
+        <div class=log_container>
+            <div class="log1">
+                <form action="homepage.html">
+                    <center>
+                        <input class="form_item" id="u_name" type="text" placeholder="Enter Username" required> <br>
+                        <input class="form_item" type="password" placeholder="password" required> <br>
+                            <button type="submit" class="fl_btn" id="l_b"  >Login</button>
+                            <button type="reset" class="fc_btn">Cancel</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

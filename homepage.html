@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_reset.css">
+    <style>
+        .container{
+            background-color: antiquewhite; width: 100%; height: 100vh;
+            
+        }
+        .line{
+            height: 30vh; width: 100%; background-color: rgba(0, 0, 0, 0.593);float: left; 
+        }
+        .line1{
+            font-size: 2rem; padding: 5vh; width: 100%; color: white;
+        }
+        .line2{
+            font-size: 1.3rem; padding: 5vh; width: 100%; color: white;
+        }
+        .lst{
+            height: 50vh; width: 100%; float: left; 
+            /* background-color: blue; */
+        }
+        li>a{
+            text-decoration: none; color: black;
+            font-size: 1.4rem; padding: 20px; margin: 2vh; 
+        }
+        ul{
+            margin-top: 10vh;
+        }
+        .list_item{
+            padding: 0.5rem;
+        }
+
+        .btn{
+            margin:2vh ; margin-left: 5vh;
+            padding: 20px 30px;
+            color: white;
+            background-color:green; 
+            border:none ; border-radius: 10px;
+            font-weight:bolder; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line">
+            <h1 class="line1">Welcome to the Reminder Application Portal</h1>
+            <h2 class="line2" id="c_d_js"> </h2><br>
+        </div>
+        <div class="lst">
+            <ul>
+                <li class="list_item"><a href="set_rem.html">Set Reminder</a></li>
+                <li class="list_item"> <a href="modify_rem.html">Modify Reminder</a></li>
+                <li class="list_item"> <a href="disable_rem.html">Disable Reminder</a></li>
+                <li class="list_item"> <a href="delete_rem.html">Delete Reminder</a></li>
+                <li class="list_item"> <a href="#enable">Enable Reminder</a></li>
+                <li class="list_item"> <a href="#view">View your Reminder</a></li> 
+            </ul>
+        </div>
+            <button class="btn" id="back_btn" onclick >Back</button>
+            <button class="btn" id="lo_btn" onclick >Log Out</button>
+    </div>
+
+    <script>
+        const c_date = new Date().toString().slice(0,15);
+        c_d_js.innerHTML="Today is "+c_date
+
+        //back button event onclick
+        back_btn.onclick=function(){
+            location.href="index.html"
+            // location.href="homepage.html"
+        }
+    </script>
+</body>
+</html>
+
