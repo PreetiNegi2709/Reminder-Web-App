@@ -29,7 +29,7 @@
         background-color: rgba(255, 255, 255, 0.463);
         padding: 1rem;
         border-radius: 1rem;
-        margin-top: 7vh;
+        margin-top: 15vh;
       }
 
       label {
@@ -37,7 +37,8 @@
         width: 40%;
         height: 5vh;
       }
-      /* .reoccure{display: inline;} */
+
+      input,textarea,select{ border-radius: 0.4rem; border: none;padding: 0.2rem;}
 
       .btn_1 {
         margin: 1vh;
@@ -56,7 +57,7 @@
     <div class="container">
       <form class="form_box">
         <fieldset>
-          <legend>modify Reminder:</legend>
+          <legend>Modify Reminder:</legend>
 
           <div class="m_date">
             <label for="cal">Select a Date: </label>
@@ -103,24 +104,20 @@
           <div class="reoccure">
             <label
               for="re_rem_d"
-              style="display: inline; width: auto; height: auto"
               >Recur for next:</label
             >
             <input name="mod_r_7_db" type="checkbox" id="7d" />
             <label for="7d" style="display: inline; width: auto; height: auto"
               >7 days &nbsp;</label
             >
-            <br />
             <input name="mod_r_5_db" type="checkbox" id="5d" />
             <label for="5d" style="display: inline; width: auto; height: auto"
               >5 days &nbsp;</label
             >
-            <br />
             <input name="mod_r_3_db" type="checkbox" id="3d" />
             <label for="3d" style="display: inline; width: auto; height: auto"
               >3 days &nbsp;</label
             >
-            <br />
             <input name="mod_r_2_db" type="checkbox" id="2d" />
             <label for="2d" style="display: inline; width: auto; height: auto"
               >2 days &nbsp;</label
