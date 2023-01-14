@@ -44,6 +44,10 @@
             font-weight:bolder; 
         }
         .btn:hover{cursor: pointer;}
+        #lo_btn:hover{
+            background-color: rgb(248, 83, 83);
+            color: aliceblue;
+        }
     </style>
 </head>
 <body>
@@ -67,13 +71,18 @@
     </div>
 
     <script>
+        // to display current time 
         const c_date = new Date().toString().slice(0,15);
         c_d_js.innerHTML="Today is "+c_date
 
         //back button event onclick
         back_btn.onclick=function(){
             location.href="index.html"
-            // location.href="homepage.html"
+        }
+
+        //logout
+        lo_btn.onclick=function(){
+            location.href="logout_pg.html"
         }
     </script>
 </body>

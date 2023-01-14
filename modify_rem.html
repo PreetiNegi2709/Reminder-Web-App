@@ -38,7 +38,13 @@
         height: 5vh;
       }
 
-      input,textarea,select{ border-radius: 0.4rem; border: none;padding: 0.2rem;}
+      input,
+      textarea,
+      select {
+        border-radius: 0.4rem;
+        border: none;
+        padding: 0.2rem;
+      }
 
       .btn_1 {
         margin: 1vh;
@@ -49,7 +55,9 @@
         border-radius: 10px;
         font-weight: bolder;
       }
-      .btn_1:hover {
+      #lo_btn:hover {
+        background-color: rgb(248, 83, 83);
+        color: aliceblue;
       }
     </style>
   </head>
@@ -102,10 +110,7 @@
           </div>
 
           <div class="reoccure">
-            <label
-              for="re_rem_d"
-              >Recur for next:</label
-            >
+            <label for="re_rem_d">Recur for next:</label>
             <input name="mod_r_7_db" type="checkbox" id="7d" />
             <label for="7d" style="display: inline; width: auto; height: auto"
               >7 days &nbsp;</label
@@ -128,7 +133,7 @@
             <center>
               <button class="btn_1" id="bk_btn" onclick>Back</button>
               <button class="btn_1" id="conf_btn" onclick>Confirm</button>
-              <button class="btn_1" id="lo_btn" >Logout</button>
+              <button class="btn_1" id="lo_btn">Log Out</button>
             </center>
           </div>
         </fieldset>
@@ -138,8 +143,16 @@
         bk_btn.onclick = function () {
           location.href = "homepage.html";
         };
+        // conf_btn.onclick = function () {
+        //   alert("the reminder is modified.");
+        // };
+
         conf_btn.onclick = function () {
-          alert("the reminder is modified.");
+          location.href = "confirm_pg.html";
+        };
+
+        lo_btn.onclick = function () {
+          location.href = "logout_pg.html";
         };
       </script>
     </div>
